@@ -1,0 +1,270 @@
+/* Fonts */
+@font-face {
+  font-family: graphik-thin;
+  src: url(/fonts/GraphikThin.otf);
+  font-weight: 25;
+}
+@font-face {
+  font-family: graphik-extra-light;
+  src: url(/fonts/GraphikExtralight.otf);
+  font-weight: 50;
+
+}
+@font-face {
+  font-family: graphik-light;
+  src: url(/fonts/GraphikLight.otf);
+  font-weight: 100;
+
+}
+@font-face {
+  font-family: graphik-regular;
+  src: url(/fonts/GraphikRegular.otf);
+  font-weight: 200;
+
+}
+@font-face {
+  font-family: graphik-medium;
+  src: url(/fonts/GraphikMedium.otf);
+  font-weight: 300;
+
+}
+@font-face {
+  font-family: graphik-semibold;
+  src: url(/fonts/GraphikSemibold.otf);
+  font-weight: 400;
+  
+}
+@font-face {
+  font-family: graphik-bold;
+  src: url(/fonts/GraphikBold.otf);
+  font-weight: 500;
+
+}
+@font-face {
+  font-family: graphik-black;
+  src: url(/fonts/GraphikBlack.otf);
+  font-weight: 600;
+
+}
+@font-face {
+  font-family: graphik-super;
+  src: url(/fonts/GraphikSuper.otf);
+  font-weight: 600;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #742e5f;
+}
+
+/* header styling */
+header{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #9329c4;
+  color: #b2e4f1;
+  font-family: graphik-regular;
+
+}
+
+.navbar-brand{
+  font-family: graphik-bold;
+}
+
+.col-6{
+  margin: auto;
+  text-align: center;
+}
+.col{
+  margin: auto;
+  text-align: center;
+}
+.navBarCenter a{
+  text-decoration: none;
+  margin: 1rem;
+  color: #b0d5f2;
+}
+.navBarCenter a{
+  transition: all 0.3s ease 0s;
+}
+.navBarCenter a:hover{
+  opacity: 70%;
+}
+
+.form-control{
+  background-color: #620097;
+  border-color: #98ecf7;
+  border-style: solid;
+  border-width: 1.5px;
+}
+
+.form-control::placeholder{
+  color: #86d2f8;
+}
+
+.form-control:focus{
+  background-color:#620097;
+  color: #8ddafb;
+}
+
+/* styling the search button */
+.btn{
+  color: #f3eef4;
+  border: none;
+}
+.btn:hover{
+  color: #b131f7;
+  background-color: #93e6f6;
+}
+
+/* styling anime search */
+.content-wrap main {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 0%;
+  flex: 1 1 0%;
+  padding: 0px 16px;
+
+}
+.content-wrap main .anime-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+.content-wrap main .anime-list .anime-card {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 33.333%;
+  flex: 1 1 33.333%;
+  max-width: 33.333%;
+  padding: 16px 35px;
+}
+.content-wrap main .anime-list .anime-card a {
+  text-decoration: none;
+}
+.content-wrap main .anime-list .anime-card figure {
+  display: block;
+  margin-bottom: 16px;
+}
+.content-wrap main .anime-list .anime-card figure img {
+  display: block;
+  width:fit-content;
+  height: 350px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.15);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.content-wrap main .anime-list .anime-card h3 {
+  color:#826fc0;
+  font-size: 18px;
+}
+.content-wrap main .anime-list .anime-card:hover figure img {
+  -webkit-box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+/* styling anime categories */
+.categoryTitle{
+  display: flex;
+  flex-direction: column; 
+  color: #e689ef;
+  margin-top: 35px;
+  margin-left: 20px;
+  font-size: 15px;
+}
+.categories{
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+.main-categories{
+  display: flex;
+  flex-direction: column; 
+  margin: 10px;
+  width: 100%;
+  object-fit: contain;
+  max-height: 400px;
+  transition: transform 450ms;
+  transition: all 0.3s ease 0s;
+}
+.main-categories:hover{
+  opacity: 70%;
+  transform: scale(1.04);
+}
+.main-categories a{
+  display: flex;
+  text-decoration: none;
+  color: #83c8e6;
+}
+.main-categories h1{
+  margin-top: 10px;
+  font-size: 18px;
+}
+.main-categories img{
+  max-height: 300px;
+
+}
+
+/* styling about page */
+.about{
+  width: 550px;
+  padding: 78px 0px;
+  max-width: 95%;
+  margin: 0 auto;
+  color: #7cd1ed;
+}
+
+h1{
+  font-family: graphik-medium;
+  color: #6dd3f9;
+}
+
+p{
+  font-family: graphik-regular;
+  color: #9fd8fe;
+}
+
+hr{
+  width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 4px;
+  background: #a063a8;
+}
+
+/* Recommendation style */
+.question{
+  text-align: center;
+  color: #70afc8;
+  margin: 40px;
+}
+
+.question h1{
+  font-family: graphik-medium;
+}
+
+.actualQuestion{
+  font-family: graphik-light;
+  font-size: 25px;
+}
+
+.submit_btn{
+  margin: 20px;
+}
+
+.optionAsAWhole label{
+  font-family: graphik-light;
+  margin: 20px;
+}
